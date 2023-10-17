@@ -6,7 +6,7 @@
 
 复制 `.module` 链接，然后打开 Shadowrocket 软件的 **配置** tab，找到 **模块** 进入，之后点击右上角的 **+** 将复制的链接粘贴进去点**下载**即可。
 
-![添加模块](assets/add_module.jpg 300px)
+<img src="https://github.com/dotSpecs/shadowrocket-modules/blob/d51d16025fbfd1e4089ad71707f57c5088af0034/assets/add_module.jpg" alt="添加模块" width="300">
 
 - [APP启动页去广告](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/AppStartingAds.module)
 - [高德地图去广告](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/AmapAds.module)
