@@ -1,0 +1,16 @@
+#!name=西窗烛
+
+#!desc=西窗烛会员解锁
+
+#!source=https://yfamily.vercel.app
+
+
+#!icon=https://github.com/dotSpecs/shadowrocket-modules/raw/main/icons/xcz.png
+
+[Script]
+
+西窗烛=type=http-response,pattern=https://lchttpapi.xczim.com/*,requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/xcz.js
+
+[MITM]
+
+hostname = %APPEND% lchttpapi.xczim.com

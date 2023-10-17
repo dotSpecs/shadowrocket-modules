@@ -1,0 +1,11 @@
+#!name=Emby Premiere
+#!desc=Emby Premiere Unlock
+
+#!source=https://github.com/chengkongyiban/shadowrocket/blob/main/Block/emby.module
+
+
+[Script]
+EmbyPremiere.js = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice,requires-body=1,max-size=0,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/EmbyPremiere.js
+
+[MITM]
+hostname = %APPEND% mb3admin.com

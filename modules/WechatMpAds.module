@@ -1,0 +1,16 @@
+#!name=微信公众号去广告
+
+#!desc=微信公众号去广告
+
+#!icon=https://github.com/dotSpecs/shadowrocket-modules/raw/main/icons/WechatMpAds.png
+
+#!source=https://yfamily.vercel.app
+
+
+[MITM]
+
+hostname = %APPEND% mp.weixin.qq.com
+
+[Script]
+
+微信公众号去广告=type=http-response,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad,requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/WechatMpAds.js
