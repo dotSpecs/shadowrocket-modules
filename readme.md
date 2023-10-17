@@ -2,6 +2,21 @@
 
 整理一些自己用到的 Shadowrocket 模块。
 
+# 使用方法
+
+复制 `.module` 链接，然后打开 Shadowrocket 软件的 **配置** tab，找到 **模块** 进入，之后点击右上角的 **+** 将复制的链接粘贴进去点**下载**即可。
+
+![添加模块](assets/add_module.jpg)
+
+- [APP启动页去广告](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/AppStartingAds.module)
+- [高德地图去广告](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/AmapAds.module)
+- [哔哩哔哩去广告](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/BilibiliAds.module)
+- [Emby Premiere](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/EmbyPremiere.module)
+- [Spotify](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/Spotify.module)
+- [微信公众号去广告](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/WechatMpAds.module)
+- [西窗烛](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/xcz.module)
+- [YouTube去广告](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/YoutubeAds.module)
+
 # 特别声明
 
 - 本仓库发布的项目中涉及的任何解锁和解密分析脚本，仅用于测试和学习研究，禁止用于商业用途，不能保证其合法性，准确性，完整性和有效性，请根据情况自行判断。
