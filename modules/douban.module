@@ -1,0 +1,15 @@
+#!name=豆瓣去广告
+
+#!desc=豆瓣去广告
+
+
+[URL Rewrite]
+
+# 开屏广告
+https://api.douban.com/v2/app_ads/splash_show reject
+https://api.douban.com/v2/app_ads/splash_preload reject
+
+[MITM] 
+
+hostname = %APPEND% api.douban.com
+
