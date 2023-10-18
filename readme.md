@@ -16,6 +16,7 @@
 - [微信公众号去广告](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/WechatMpAds.module)
 - [西窗烛](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/xcz.module)
 - [YouTube去广告](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/YoutubeAds.module)
+- [酷我音乐](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/kuwo.module)
 
 # 特别声明
 
