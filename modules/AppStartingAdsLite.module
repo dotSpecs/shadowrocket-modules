@@ -33,5 +33,5 @@ amap9=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/
 
 [MITM] 
 
-hostname = %APPEND% api.douban.com *.amap.com
+hostname = %APPEND% api.douban.com,*.amap.com
 
