@@ -1,0 +1,37 @@
+#!name=自用app去广告
+
+#!desc=自用app去广告
+
+
+[URL Rewrite]
+
+# 豆瓣开屏广告
+https://api.douban.com/v2/app_ads/splash_show reject
+
+# 高德地图
+^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/card-service-route-plan\? reject-dict
+^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information reject-200
+^https?:\/\/.*\.amap\.com\/ws\/asa\/ads_attribution reject
+^https?:\/\/.*\.amap\.com\/ws\/shield\/scene\/recommend reject-dict
+^https?:\/\/.*\.amap\.com\/uploadimg\/\w+\.gif reject-img
+^https?:\/\/.*\.amap\.com\/ws\/valueadded\/weather reject-dict
+
+[Script]
+
+
+# 高德地图
+amap=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/message\/notice\/list,requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/AppStartingAds/amap.js
+amap2=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable,requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/AppStartingAds/amap.js
+amap3=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/nearbyrec_smart,requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/AppStartingAds/amap.js
+amap4=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/promotion-web\/resource,requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/AppStartingAds/amap.js
+amap5=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/main-page,requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/AppStartingAds/amap.js
+amap6=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/valueadded\/alimama\/splash_screen,requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/AppStartingAds/amap.js
+amap7=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/msgbox\/pull,requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/AppStartingAds/amap.js
+amap8=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaas,requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/AppStartingAds/amap.js
+amap9=type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword,requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/AppStartingAds/amap.js
+
+
+[MITM] 
+
+hostname = %APPEND% api.douban.com *.amap.com
+
