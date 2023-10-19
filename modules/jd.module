@@ -1,0 +1,23 @@
+#!name=京东去广告
+
+#!desc=京东去广告
+
+
+[URL Rewrite]
+
+^https?:\/\/jdread-api\.jd\.com\/jdread\/api\/channel\/module\/opens reject-200
+^https?:\/\/jdread-api\.jd\.com\/jdread\/api\/popup reject-200
+^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(start|queryMaterialAdverts) reject-200
+^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ reject-200
+^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/(new)?na\/m\/getLoadingPicture reject-200
+^https:\/\/router-app-api\.jdcloud\.com\/v\d\/board\/routerAppSplash reject-200
+
+[Script]
+jd_start=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show,requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/AppStartingAds/jd_start.js
+
+jd_json=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(hotWords|hotSearchTerms),requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/AppStartingAds/jd_json.js
+
+[MITM] 
+
+hostname = %APPEND% jdread-api.jd.com,ms.jr.jd.com,bdsp-x.jd.com,dsp-x.jd.com,api.m.jd.com,router-app-api.jdcloud.com
+

@@ -427,7 +427,7 @@ fly=type=http-response,pattern=^https?:\/\/47\.100\.65\.202\/source\/plugin\/mob
 
 iqiyi_open_ads=type=http-response,pattern=^https?:\/\/.*cupid\.iqiyi\.com\/mixer\?,requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/AppStartingAds/iqiyi_open_ads.js
 
-startup=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show,requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/AppStartingAds/startup.js
+startup=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show,requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/AppStartingAds/jd_start.js
 
 jd_json=type=http-response,pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(hotWords|hotSearchTerms),requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/AppStartingAds/jd_json.js
 
