@@ -7,6 +7,8 @@
 [rewrite_local]
 ^https:\/\/biz\.cyapi\.cn\/p\/v1\/vip_info$ url script-request-body https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/caiyun.js
 
+彩云天气v1=type=http-response,pattern=^https:\/\/biz\.cyapi\.cn\/p\/v1\/vip_info$,requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/js/caiyun.js
+
 [mitm] 
 
 hostname = biz.cyapi.cn
@@ -20,7 +22,7 @@ body = {
 		"is_auto_renewal": false
 	},
 	"svip": {
-		"expires_time": "0",
+		"expires_time": "4070923200",
 		"is_auto_renewal": false
 	},
 	"upcoming_renewals": [],
