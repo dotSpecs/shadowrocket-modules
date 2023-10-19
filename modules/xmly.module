@@ -7,7 +7,7 @@
 
 [MITM]
 
-hostname= %APPEND% *.xima*.*, *.xmcdn.*,*.ximalaya.com
+hostname= %APPEND% *.xima*.*,*.xmcdn.*,*.ximalaya.com
 
 [URL Rewrite]
 
