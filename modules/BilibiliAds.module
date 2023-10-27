@@ -71,7 +71,7 @@ hostname= %APPEND% app.bilibili.com,api.live.bilibili.com,api.vc.bilibili.com, a
 
 #～BiliBili_哔哩哔哩_繁体CC字幕转中文简体[自行启用]@ddgksf2013
 
-biliad=type=http-response,pattern=^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$,requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/rewrite/BilibiliAds_CC.conf
+biliad=type=http-response,pattern=^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$,requires-body=1,script-path=https://github.com/dotSpecs/shadowrocket-modules/raw/main/rewrite/BiliBiliAds_CC.conf
 
 #～BiliBili_哔哩哔哩_观影页面去广告@ddgksf2013
 
