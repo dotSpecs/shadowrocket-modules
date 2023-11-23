@@ -17,6 +17,10 @@
 - [西窗烛](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/xcz.module)
 - [YouTube去广告](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/YoutubeAds.module)
 - [酷我音乐](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/kuwo.module)
+- [百度去广告](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/baidu.module)
+- [豆瓣去广告](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/douban.module)
+- [京东去广告](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/jd.module)
+- [喜马拉雅去广告](https://github.com/dotSpecs/shadowrocket-modules/raw/main/modules/xmly.module)
 
 # 特别声明
 
